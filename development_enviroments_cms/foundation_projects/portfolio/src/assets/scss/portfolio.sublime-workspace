@@ -1,0 +1,514 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fo",
+				"footer\tTag"
+			],
+			[
+				"s",
+				"src\tAttr"
+			],
+			[
+				"hea",
+				"header\tTag"
+			],
+			[
+				"lar",
+				"large-4"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"l",
+				"large-4"
+			],
+			[
+				"co",
+				"coloumns"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"admin",
+				"adminRouter"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"text-a",
+				"text-align"
+			],
+			[
+				"st",
+				"style\tTag"
+			],
+			[
+				"mic",
+				"michael_h_dk"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/wamp64/www/1_studi_web_development/development_enviroments_cms/foundation_projects/portfolio/src/pages/index.html",
+			"settings":
+			{
+				"buffer_size": 3022,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/wamp64/www/1_studi_web_development/development_enviroments_cms/foundation_projects/portfolio/src/partials/footer.html",
+			"settings":
+			{
+				"buffer_size": 54,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "footer.html"
+			}
+		},
+		{
+			"file": "_settings.scss",
+			"settings":
+			{
+				"buffer_size": 14536,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app.scss",
+			"settings":
+			{
+				"buffer_size": 1459,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "costum.scss",
+			"settings":
+			{
+				"buffer_size": 30,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "costum.scss"
+			}
+		},
+		{
+			"file": "/C/wamp64/www/1_studi_web_development/development_enviroments_cms/foundation_projects/portfolio/src/layouts/default.html",
+			"settings":
+			{
+				"buffer_size": 639,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 432.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/wamp64/www/1_studi_web_development/development_enviroments_cms/foundation_projects/portfolio",
+		"/C/wamp64/www/1_studi_web_development/development_enviroments_cms/foundation_projects/portfolio/dist",
+		"/C/wamp64/www/1_studi_web_development/development_enviroments_cms/foundation_projects/portfolio/dist/assets",
+		"/C/wamp64/www/1_studi_web_development/development_enviroments_cms/foundation_projects/portfolio/src",
+		"/C/wamp64/www/1_studi_web_development/development_enviroments_cms/foundation_projects/portfolio/src/assets",
+		"/C/wamp64/www/1_studi_web_development/development_enviroments_cms/foundation_projects/portfolio/src/assets/scss",
+		"/C/wamp64/www/1_studi_web_development/development_enviroments_cms/foundation_projects/portfolio/src/layouts",
+		"/C/wamp64/www/1_studi_web_development/development_enviroments_cms/foundation_projects/portfolio/src/pages"
+	],
+	"file_history":
+	[
+		"/C/wamp64/www/1_studi_web_development/development_enviroments_cms/foundation_projects/myFirstFoundationProject/src/pages/index.html",
+		"/C/wamp64/www/1_studi_web_development/development_enviroments_cms/foundation_projects/myFirstFoundationProject/src/partials/topbar.html",
+		"/C/wamp64/www/1_studi_web_development/development_enviroments_cms/foundation_projects/myFirstFoundationProject/src/partials/sidebar.html",
+		"/C/wamp64/www/1_studi_web_development/development_enviroments_cms/foundation_projects/myFirstFoundationProject/src/layouts/default.html",
+		"/C/wamp64/www/1_studi_web_development/development_enviroments_cms/foundation_projects/myFirstFoundationProject/src/partials/footer.html",
+		"/C/Users/Michael Houmann/Sites/devdesktop/drupal-8.1.10/themes/Custom/MyNewTheme/MyNewTheme.info.yml",
+		"/C/Users/Michael Houmann/Sites/devdesktop/drupal-8.1.10/themes/Custom/MyNewTheme/css/style.css",
+		"/C/Users/Michael Houmann/Sites/devdesktop/drupal-8.1.10/themes/Custom/MyNewTheme/NyNewTheme.libraries.yml",
+		"/C/wamp64/www/1_studi_web_development/frontend_baskend/04_restful_node_aapi/simple_structure/resturants.js",
+		"/C/wamp64/www/1_studi_web_development/frontend_baskend/04_restful_node_aapi/simple_structure/openHours.js",
+		"/C/wamp64/www/1_studi_web_development/frontend_baskend/04_restful_node_aapi/simple_structure/reviews.js",
+		"/C/wamp64/www/1_studi_web_development/frontend_baskend/04_restful_node_aapi/simple_structure/server.js",
+		"/C/wamp64/www/1_studi_web_development/frontend_baskend/04_restful_node_aapi/simple_structure/.gitignore",
+		"/C/Users/Michael Houmann/Sites/devdesktop/drupal-8.1.10/themes/Custom/myNewTheme/myNewTheme.info.yml",
+		"/C/Users/Michael Houmann/Sites/devdesktop/drupal-8.1.10/themes/Custom/myNewTheme/myNewTheme.libraries.yml",
+		"/C/Users/Michael Houmann/Sites/devdesktop/drupal-8.1.10/themes/myNewTheme/myNewTheme.info.yaml",
+		"/C/wamp64/www/1_studi_web_development/frontend_baskend/02_node_&_express/params/server.js",
+		"/C/wamp64/www/1_studi_web_development/frontend_baskend/02_node_&_express/middelware/server.js",
+		"/C/wamp64/www/1_studi_web_development/frontend_baskend/02_node_&_express/node_and_express_routing_1/server.js",
+		"/C/wamp64/www/1_studi_web_development/frontend_baskend/starting_a_node_server/express_ver_2/server.js",
+		"/C/wamp64/www/1_studi_web_development/frontend_baskend/starting_a_node_server/express_ver_2/index.html",
+		"/C/wamp64/www/1_studi_web_development/frontend_baskend/starting_a_node_server/node_express/server.js",
+		"/C/wamp64/www/1_studi_web_development/frontend_baskend/starting_a_node_server/simple_way/server.js",
+		"/C/wamp64/www/1_studi_web_development/frontend_baskend/starting_a_node_server/node_express/index.html",
+		"/C/Users/Michael Houmann/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/wamp64/www/1_studi_web_development/frontend_baskend/starting_a_node_server/cmd_promt/server.js",
+		"/C/wamp64/www/1_studi_web_development/frontend_baskend/starting_a_node_server/cmd_promt/package.json",
+		"/C/wamp64/www/1_studi_web_development/frontend_baskend/starting_a_node_server/simple_way/index.html",
+		"/C/Users/Michael Houmann/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/wamp64/www/1_studi_web_development/frontend_baskend/starting_a_node_server/simple_way/package.json",
+		"/C/Users/Michael Houmann/AppData/Roaming/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
+		"/C/wamp64/www/gravenhorst/gravenhorst_website/workfiles/includes/public-header.php",
+		"/C/wamp64/www/gravenhorst/gravenhorst_website/workfiles/includes/forbindelse.php"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"blue"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/wamp64/www/1_studi_web_development/development_enviroments_cms/foundation_projects/portfolio/src/pages/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3022,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								914,
+								914
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/wamp64/www/1_studi_web_development/development_enviroments_cms/foundation_projects/portfolio/src/partials/footer.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 54,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								32,
+								32
+							]
+						],
+						"settings":
+						{
+							"auto_name": "footer.html",
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "_settings.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14536,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1106,
+								1081
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 607.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1459,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1459,
+								1459
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 240.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "costum.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 30,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								29,
+								29
+							]
+						],
+						"settings":
+						{
+							"auto_name": "costum.scss",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/C/wamp64/www/1_studi_web_development/development_enviroments_cms/foundation_projects/portfolio/src/layouts/default.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 639,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								565,
+								565
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 25.0
+	},
+	"pinned_build_system": "",
+	"project": "portfolio.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\wamp64\\www\\1_studi_web_development\\frontend_baskend\\04_restful_node_aapi\\simple_structure\\openHours.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 217.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
