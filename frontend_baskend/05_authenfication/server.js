@@ -9,9 +9,12 @@ var app                     = express();
 var bodyParser              = require('body-parser');
 var morgan                  = require('morgan');
 var mongoose                = require('mongoose');
+var jwt                     = require('jsonwebtoken');
+var superSecret             = 'ineverdrinkbeeroralcoholorsnaps';
 var User                    = require('./app/models/user');
 var port                    = process.env.PORT || 8080;
 //connect to the database on modulous.io
+
 mongoose.connect('mongodb://michael-h:kode1234@waffle.modulusmongo.net:27017/d4iNuryp')
 
 
@@ -45,6 +48,50 @@ app.get('/', function(req, res) {
 
 //gen an instance of the express router
 var apiRouter = express.Router();
+
+//route to authenticate a user (/api/authenticate)
+apiRouter.post('/authenticate', function(req, res) {
+
+    //find the user
+    User.findOne({
+        username: req.body.username
+    }).select('name, username, password').exec(function(err, user) {
+        if (err) throw err;
+
+        //no user with that username was found
+        if (!user){
+            res.json({
+                success: false,
+                message: 'Authentication failer. User not found'
+            });
+        } else if (user) {
+
+            //check if passwordmatches
+            var validPassword = user.comparePassword(req.body.password);
+            if (!validPassword) {
+                res.json ({
+                    success: false,
+                    message: 'Authentication failed. Wrong Password'
+                });
+            } else {
+                //if user is found and password are right , create a token
+                var token = jwt.sign({
+                    name: user.name,
+                    username: user.username
+                }, superSecret, {
+                    expiresInMinutes: 1440 //expires in 24 hours
+                });
+
+                //return the information as json including the token
+                res.json({
+                    success: true,
+                    message: 'Your token',
+                    token: token
+                });
+            }
+        }
+    });
+});
 
 //middelware to use for all requests
 apiRouter.use(function(req, res, next) {
@@ -92,7 +139,50 @@ apiRouter.route('/users')
             });
         });
 
+    //get single user, routes that ends in /users/:user_id
+    apiRouter.route('/users/:user_id')
 
+        //get the user with that id
+        .get(function(req, res) {
+            User.findById(req.params.user_id, function(err, user) {
+                if (err) res.send(err);
+
+                //return that user
+                res.json(user);
+            });
+        })
+
+        //change/update user (PUT)
+        .put(function(req, res) {
+            //find the user with user_id
+            User.findById(req.params.user_id, function(err, user) {
+                if (err) res.send(err);
+
+                //update the user if there are changes
+                if (req.body.name) user.name = req.body.name;
+                if (req.body.username) user.username = req.body.username;
+                if (req.body.password) user.password = req.body.password;
+
+                //save the user
+                user.save(function(err) {
+                    if (err) res.send(err);
+
+                    //return a message
+                    res.json( {message: 'User changed'} );
+                });
+            });
+        })
+
+        //delete the user with this user_id (DELETE)
+        .delete(function(req, res) {
+            User.remove( {
+                _id: req.params.user_id
+            }, function(err, user) {
+                if (err) res.send(err);
+
+                res.json( {message: 'User deleted'} )
+            });
+        });
 
 //test route to see if everything is working
 //accessed at GET http://localhost:8080/apiRouter
