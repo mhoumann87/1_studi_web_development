@@ -10,7 +10,7 @@ var bodyParser              = require('body-parser');
 var morgan                  = require('morgan');
 var mongoose                = require('mongoose');
 var jwt                     = require('jsonwebtoken');
-var superSecret             = 'ineverdrinkbeeroralcoholorsnaps';
+var superSecret             = 'ilovescotchscotchyscotchscotch';
 var User                    = require('./app/models/user');
 var port                    = process.env.PORT || 8080;
 //connect to the database on modulous.io
@@ -56,6 +56,7 @@ apiRouter.post('/authenticate', function(req, res) {
     User.findOne({
         username: req.body.username
     }).select('name, username, password').exec(function(err, user) {
+       
         if (err) throw err;
 
         //no user with that username was found
@@ -78,9 +79,8 @@ apiRouter.post('/authenticate', function(req, res) {
                 var token = jwt.sign({
                     name: user.name,
                     username: user.username
-                }, superSecret, {
-                    expiresInMinutes: 1440 //expires in 24 hours
-                });
+                }, superSecret
+                );
 
                 //return the information as json including the token
                 res.json({
@@ -98,7 +98,36 @@ apiRouter.use(function(req, res, next) {
     //do loggin
     console.log('Our API is in use');
 
-    next();
+    //check for a token
+    var token = req.body.token || req.query.token || req.headers['x-access-token'];
+
+    //decode token
+    if (token) {
+
+        //verifies token
+        jwt.verify(token, superSecret, function(err, decoded){
+            if (err) {
+                return res.status(403).send({
+                    success: false,
+                    message: 'Failed to authenticate token'
+                });
+            } else {
+
+                //if everything is good, save to request for use in other routes
+                req.decoded = decoded;
+
+                next();
+            }
+        });
+    } else {
+
+        //if there is no token
+        //return a HTTP rosponse of 403 (access forbidden) and an error message
+        return res.status(403).send({
+            success: false,
+            message: 'No token provided'
+        });
+    }
 });
 
 //on routes that ends in /users
