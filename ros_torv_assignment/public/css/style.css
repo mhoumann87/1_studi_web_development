@@ -1,0 +1,11 @@
+.logo {
+	width: 100%;
+	height: auto;
+	max-width: 120px;
+	display: block;
+	margin: 0 auto;
+}
+
+.ramme {
+	border: 1px solid #000000;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "07_ng_routes",
+  "version": "0.0.1",
+  "description": "First Angular app with Node and Express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "?.git"
+  },
+  "keywords": [
+    "Angular",
+    "node.js",
+    "express",
+    "ng-routes"
+  ],
+  "author": "Michael Houmann",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
