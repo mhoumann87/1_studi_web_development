@@ -129,14 +129,16 @@ aside {
 	float: right;
 	border: 1px solid #0F0F0F;
 	padding: 10px;
-	text-align: auto;
+	text-align: center;
 }
 
 .shop-main {
 	width: 74%;
 	float: left;
-	border: 1px solid #0f0f0f;
-	max-height: 600px;
+	border-top: 1px solid #0f0f0f;
+	border-left: 1px solid #0f0f0f;
+	border-right: 1px solid #0f0f0f;
+	max-height: 800px;
 	overflow: auto;
 }
 
@@ -154,4 +156,70 @@ aside {
 .aktiv {
 	font-style: bold;
 	text-decoration: underline;
+}
+
+.map-box {
+	margin-top: 10px;
+	
+	width: 100%;
+
+}
+
+.map {
+	width: 100%;
+	max-width: 160px;
+	height: auto;
+}
+
+.face {
+	width:100%;
+	height: auto;
+	max-width:100px;
+}
+
+.products {
+	width: 100%;
+	border-bottom: 1px solid #0f0f0f;
+	padding-bottom: 10px;
+	clear:both;
+	overflow: hidden;
+}
+
+.prod-pic {
+	width:19%;
+	float:left;
+	padding-top: 10px;
+}
+
+.pic {
+	width: 100%;
+	height: auto;
+	max-width: 120px;
+}
+
+.prod-text {
+	width:44%;
+	padding:10px;
+	float:left;
+}
+
+.red {
+	color: #ff0000;
+}
+
+.pris {
+	width:34%;
+	float: right;
+	padding: 10px;
+	text-align:right;
+}
+
+.pris h1 {
+	font-size: 45px;
+}
+
+.cen {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
 }
